@@ -12,6 +12,10 @@ connectDatabase();
 const app = express();
 app.use(express.json());
 
+app.get("/", (req,res) => {
+  res.send("sample");
+})
+
 // API
 app.use("/api/import", ImportData);
 app.use("/api/products", productRoute);
