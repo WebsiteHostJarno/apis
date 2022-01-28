@@ -13,6 +13,7 @@ const app = express();
 app.use(express.json());
 
 // API
+app.use("/api", express)
 app.use("/api/import", ImportData);
 app.use("/api/products", productRoute);
 app.use("/api/users", userRouter);
@@ -24,7 +25,6 @@ app.get("/api/config/paypal", (req, res) => {
 // ERROR HANDLER
 app.use(notFound);
 app.use(errorHandler);
-app.use("/api");
 
 const PORT = process.env.PORT || 1000;
 
