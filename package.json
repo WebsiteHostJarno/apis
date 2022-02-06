@@ -4,14 +4,9 @@
   "description": "",
   "type": "module",
   "main": "server.js",
-  "homepage": "http://localhost:5002",
-  "engines": {
-    "node": "14.x"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./server.js",
-    "server":"nodemon ./server.js"
+    "start": "node server.js",
+    "server":"nodemon server.js"
   },
   "author": "",
   "license": "ISC",
