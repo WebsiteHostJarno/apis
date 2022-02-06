@@ -20,7 +20,9 @@ app.use("/api/orders", orderRouter);
 app.get("/api/config/paypal", (req, res) => {
   res.send(process.env.PAYPAL_CLIENT_ID);
 });
-
+app.get("/", (req,res) => {
+   res.send("test");
+});
 
 const PORT = process.env.PORT || 1000;
 
